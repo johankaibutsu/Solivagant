@@ -14,17 +14,19 @@ function App() {
         <header className="flex justify-between items-center mb-8 sm:mb-12">
           <div className="flex items-center">
             <Book className="h-5 w-5 sm:h-6 sm:w-6 text-gray-700 dark:text-gray-300 mr-2" />
-            <h1 className="text-xl sm:text-2xl font-medium text-gray-800 dark:text-gray-200">Journal</h1>
+            <h1 className="text-xl sm:text-2xl font-medium text-gray-800 dark:text-gray-200">
+              Solivagant
+            </h1>
           </div>
           <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} />
         </header>
-        
+
         <main>
           <JournalList entries={journalEntries} />
         </main>
-        
+
         <footer className="mt-12 sm:mt-16 text-center text-gray-500 dark:text-gray-400 text-sm">
-          <p>© 2025</p>
+          <p>Without music, life would be a mistake.</p>
         </footer>
       </div>
     </div>

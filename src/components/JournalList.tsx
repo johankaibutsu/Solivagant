@@ -33,7 +33,7 @@ const JournalList: React.FC<JournalListProps> = ({ entries }) => {
       />
       
       <div className="mt-8">
-        {entries.map(entry => (
+        {entries.slice().reverse().map(entry => (
           <JournalEntryComponent 
             key={entry.id} 
             entry={entry} 

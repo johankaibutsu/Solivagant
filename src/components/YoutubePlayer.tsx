@@ -19,7 +19,7 @@ const YoutubePlayer: React.FC<YoutubePlayerProps> = ({
     if (!videoUrl || !isPlaying || !iframeRef.current) return;
     
     // Add start time parameter and volume parameter (50%)
-    let embedUrl = `${videoUrl}?autoplay=1&start=${startTime}&volume=50`;
+    let embedUrl = `${videoUrl}?autoplay=1&start=${startTime}`;
     
     // Add end time parameter if provided
     if (endTime) {
